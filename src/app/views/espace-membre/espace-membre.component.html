@@ -1,0 +1,64 @@
+<h1>Espace membre</h1>
+
+<div class="row">
+
+  <div class="col-sm-6">
+    <div class="card mb-2">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-star"></i> Les tournois</h5>
+
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h5>Simples</h5>
+            <app-field-classement required="true" label="Classement en simple"></app-field-classement>
+          </li>
+          <li class="list-group-item">
+            <h5>Mixtes</h5>
+            <app-field-classement required="true" label="Classement en mixte"></app-field-classement>
+            <app-field-licencie label="Partenaire par défaut en mixte"></app-field-licencie>
+          </li>
+          <li class="list-group-item">
+            <h5>Doubles</h5>
+            <app-field-classement required="true" label="Classement en double"></app-field-classement>
+            <app-field-licencie label="Partenaire par défaut en double"></app-field-licencie>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card mb-2">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-user"></i> Utilisateur</h5>
+
+        <ul class="list-group">
+
+          <li class="list-group-item">
+            <h5>Le joueur</h5>
+            <app-field-licence></app-field-licence>
+          </li>
+
+          <li class="list-group-item">
+            <h5>Identité</h5>
+            <app-field-identite></app-field-identite>
+            <app-field-sexe></app-field-sexe>
+          </li>
+
+          <li class="list-group-item list-group-item-primary">
+            <h5>Sécurité</h5>
+            <app-field-password></app-field-password>
+            <app-field-password></app-field-password>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<button type="submit" class="btn btn-primary btn-lg btn-block mb-2">
+  <i class="fas fa-save"></i> Enregistrer les modifications
+</button>

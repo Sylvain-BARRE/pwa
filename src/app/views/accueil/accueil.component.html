@@ -1,0 +1,36 @@
+<h1>Accueil</h1>
+
+<div class="alert alert-primary d-flex justify-content-between align-items-center" role="alert">
+  <span>Bonjour et bienvenue sur le site du club de badminton d'Olemps (OBAD), vous souhaitez vous renseigner sur le club ?</span>
+  <a class="btn btn-info" routerLink="/informations">Se Renseigner</a>
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-star"></i> Les inscriptions ouvertes</h5>
+        <ul class="list-group">
+          <li class="list-group-item">(Olemps) - Very Bad Night</li>
+          <li class="list-group-item">(Albi) - Tournoi de double de l'albigeois</li>
+          <li class="list-group-item">(St-Affrique) - Tournoi de St-Affrique</li>
+          <li class="list-group-item">(Rodez) - Tournoi de Rodez</li>
+          <li *ngIf="!isAuth" class="list-group-item"><a class="btn btn-primary btn-block" routerLink="/connexion">Se Connecter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card" style="background: #d1daed">
+      <div class="card-body" style="color: #3b5998">
+        <h5 class="card-title"><i class="fab fa-facebook"></i> Facebook</h5>
+        <p class="card-text">Notre page facebook</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="text-muted text-center mt-2">Copyright ©2018 - {{ yearCopyright }}. Réalisé par <a href="mailto:sylvain.barre.informatique@gmail.com" class="text-dark">Sylvain BARRE</a>. Tous droits réservés.</p>

@@ -1,0 +1,76 @@
+<h1>Inscription</h1>
+
+<div class="row">
+
+  <div class="col-sm">
+    <div class="card mb-2">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-venus"></i> / <i class="fas fa-mars"></i> Simples</h5>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="faireDuSimple">
+          <label class="custom-control-label" for="faireDuSimple">je souhaite faire du simple</label>
+        </div>
+
+        <app-field-classement></app-field-classement>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm">
+    <div class="card mb-2">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-venus-mars"></i> Mixtes</h5>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="faireDuMixte">
+          <label class="custom-control-label" for="faireDuMixte">je souhaite faire du mixte</label>
+        </div>
+
+        <app-field-classement></app-field-classement>
+
+        <div class="form-group">
+
+          <label for="demandeurMixte">Partenaire <span class="text-primary">*</span></label>
+
+          <div class="input-group flex-nowrap">
+
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-users"></i></span>
+            </div>
+
+            <select class="custom-select" name="demandeurMixte" id="demandeurMixte" required="required">
+              <option value="DEMANDEUR">Rester en demande</option>
+              <option value="CLUB">Partenaire du club</option>
+              <option value="AUTRE">Partenaire d'un autre club</option>
+            </select>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm">
+    <div class="card mb-2">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-venus-double"></i> / <i class="fas fa-mars-double"></i> Doubles</h5>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="faireDuDouble">
+          <label class="custom-control-label" for="faireDuDouble">je souhaite faire du double</label>
+        </div>
+
+        <app-field-classement></app-field-classement>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<button type="submit" class="btn btn-primary btn-lg btn-block mb-2">
+  <i class="fas fa-paper-plane"></i> Envoyer la demande d'inscription
+</button>

@@ -1,0 +1,40 @@
+<div class="alert alert-warning text-center font-weight-bold m-0" role="alert">
+  <i class="fas fa-grin-beam-sweat"></i> Ce site est actuellement en béta
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  <a class="navbar-brand d-flex align-items-center" routerLinkActive="active" routerLink="/accueil">
+    <img src="assets/images/logo.png" class="logo" alt="OBAD">
+    Olemps Badminton
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Menu OBAD">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active" *ngIf="!isAuth">
+        <a class="nav-link" routerLink="/connexion"><i class="fas fa-sign-in-alt"></i> / Connexion</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" *ngIf="isAuth">
+        <a class="nav-link" routerLink="/tournois"><i class="fas fa-star"></i> / Tournois</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" *ngIf="isAuth">
+        <a class="nav-link" routerLink="/calendrier"><i class="fas fa-calendar"></i> / Mon calendrier</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" *ngIf="isAuth">
+        <a class="nav-link" routerLink="/membre"><i class="fas fa-user"></i> / Espace membre</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" *ngIf="isAuth">
+        <a class="nav-link" routerLink="/administration"><i class="fas fa-cog"></i> / Administration</a>
+      </li>
+      <li class="nav-item" *ngIf="isAuth">
+        <a class="nav-link text-danger" (click)="onSignOut()" style="cursor: pointer"><i
+          class="fas fa-sign-out-alt"></i> / Déconnexion</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,111 @@
+<h1>Liste des tournois</h1>
+
+<div class="card mb-2">
+  <div class="card-header" id="RechercheHead" data-toggle="collapse" data-target="#recherche" aria-expanded="false"
+       aria-controls="recherche" style="cursor: pointer">
+    <span class="mb-0 font-weight-bold" >
+        <i class="fas fa-search"></i> Recherche
+    </span>
+  </div>
+
+  <div id="recherche" class="collapse" aria-labelledby="RechercheHead">
+    <div class="card-body">
+      <p>La recherche n'a pas encore été développée !</p>
+    </div>
+  </div>
+</div>
+
+<table class="table table-striped table-bordered table-responsive-md mb-2">
+  <thead>
+  <tr class="table-primary">
+    <th scope="col">Nom</th>
+    <th scope="col">Ville</th>
+    <th scope="col">Date</th>
+    <th scope="col" class="text-center">Matchs</th>
+    <th scope="col" class="text-center">Tournoi</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th class="align-middle">Very Bad Night</th>
+    <td class="align-middle">Olemps</td>
+    <td class="align-middle">30/03/2019</td>
+    <td class="align-middle text-center">
+      <span class="badge badge-success">Doubles</span><br>
+    </td>
+    <td class="align-middle text-center">
+      <span class="badge badge-secondary">Normal</span><br>
+    </td>
+    <td class="align-middle">
+      <div class="btn-group btn-block">
+        <button type="button" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                title="Autres informations"><i class="fas fa-info"></i></button>
+        <a class="btn btn-sm btn-primary" routerLink="/tournois/1/inscription"><i class="fas fa-calendar-check"></i></a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th class="align-middle">Tournoi de double de l'albigeois</th>
+    <td class="align-middle">Albi</td>
+    <td class="align-middle">15/04/2019</td>
+    <td class="align-middle text-center">
+      <span class="badge badge-success">Mixtes</span><br>
+      <span class="badge badge-success">Doubles</span><br>
+    </td>
+    <td class="align-middle text-center">
+      <span class="badge badge-secondary">Normal</span><br>
+    </td>
+    <td class="align-middle">
+      <div class="btn-group btn-block">
+        <button type="button" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                title="Autres informations"><i class="fas fa-info"></i></button>
+        <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
+                title="S'inscrire au tournoi"><i class="fas fa-calendar-check"></i></button>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th class="align-middle">Tournoi des jeunes du Monastère</th>
+    <td class="align-middle">Le Monastère</td>
+    <td class="align-middle">07/05/2019</td>
+    <td class="align-middle text-center">
+      <span class="badge badge-success">Simples</span><br>
+      <span class="badge badge-success">Mixtes</span><br>
+      <span class="badge badge-success">Doubles</span><br>
+    </td>
+    <td class="align-middle text-center">
+      <span class="badge badge-success">TdJ</span><br>
+    </td>
+    <td class="align-middle">
+      <div class="btn-group btn-block">
+        <button type="button" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                title="Autres informations"><i class="fas fa-info"></i></button>
+        <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
+                title="S'inscrire au tournoi"><i class="fas fa-calendar-check"></i></button>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th class="align-middle">Grand tournoi handibad</th>
+    <td class="align-middle">Paris</td>
+    <td class="align-middle">15/05/2019</td>
+    <td class="align-middle text-center">
+      <span class="badge badge-success">Simples</span><br>
+      <span class="badge badge-success">Mixtes</span><br>
+      <span class="badge badge-success">Doubles</span><br>
+    </td>
+    <td class="align-middle text-center">
+      <span class="badge badge-success">Handibad</span><br>
+    </td>
+    <td class="align-middle">
+      <div class="btn-group btn-block">
+        <button type="button" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                title="Autres informations"><i class="fas fa-info"></i></button>
+        <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
+                title="S'inscrire au tournoi"><i class="fas fa-calendar-check"></i></button>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,19 @@
+<div class="form-group">
+
+  <label for="licence">{{ label }} <span *ngIf="required" class="text-primary">*</span></label>
+
+  <div class="input-group flex-nowrap">
+
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="addon-wrapping"><i class="fa fa-id-card"></i></span>
+    </div>
+
+    <select class="custom-select" name="licence" id="licence" [required]="required">
+      <option *ngFor="let licencie of listeLicence" value="licencie.licence">{{ licencie.prenom}} {{ licencie.nom }}</option>
+    </select>
+
+    <div class="input-group-append">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
